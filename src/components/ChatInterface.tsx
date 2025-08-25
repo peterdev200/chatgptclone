@@ -271,3 +271,5 @@ export default function ChatInterface() {
     </div>
   );
 }
+
+//add chat box outside the scroll
