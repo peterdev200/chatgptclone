@@ -94,8 +94,8 @@ export default function ChatInterface() {
     <div className="flex-1 flex flex-col">
       {/* Empty state */}
       {messages.length === 0 && (
-        <section className="empty flex-1 flex items-center justify-center p-8">
-          <div className="empty__inner text-center max-w-2xl">
+        <section className="empty flex-1 flex  justify-center p-8 pt-20">
+          <div className="empty__inner text-center w-full">
             <div className="title_roll mb-8 flex justify-center">
               <div className="our_logo_div flex justify-center items-center w-[20vh] rounded-md bg-white">
                 <Image
@@ -112,12 +112,12 @@ export default function ChatInterface() {
             </h2>
 
             <div
-              className="askbar max-w-xl mx-auto flex items-center justify-center"
+              className="askbar max-w-4xl mx-auto flex items-center justify-center"
               role="search"
             >
-              <div className="relative w-full">
+              <div className="relative w-full ">
                 <textarea
-                  className="askbar__input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-lg resize-none bg-whscrollbarite dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent scrollbar-hidden"
+                  className="askbar__input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-full resize-none bg-whscrollbarite dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent scrollbar-hidden"
                   placeholder="Ask anything"
                   rows={1}
                   aria-label="Ask anything"
@@ -145,7 +145,7 @@ export default function ChatInterface() {
                     </svg>
                   </button>
                   <button
-                    className="askbar__btn primary bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-md transition-colors"
+                    className="askbar__btn primary bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors"
                     title="Send"
                     onClick={() => sendMessage(inputValue)}
                   >
@@ -236,7 +236,7 @@ export default function ChatInterface() {
             <div className="relative">
               <textarea
                 ref={inputRef}
-                className="input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-lg resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent scrollbar-hidden"
+                className="input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-full resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent scrollbar-hidden"
                 placeholder="Ask anything"
                 rows={1}
                 aria-label="Message input"
@@ -246,7 +246,7 @@ export default function ChatInterface() {
               />
 
               <button
-                className="send absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-md transition-colors"
+                className="send absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors"
                 onClick={() => sendMessage(inputValue)}
                 aria-label="Send"
               >
@@ -271,5 +271,3 @@ export default function ChatInterface() {
     </div>
   );
 }
-
-//add chat box outside the scroll
