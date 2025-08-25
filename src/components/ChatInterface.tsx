@@ -96,14 +96,14 @@ export default function ChatInterface() {
       {messages.length === 0 && (
         <section className="empty flex-1 flex items-center justify-center p-8">
           <div className="empty__inner text-center max-w-2xl">
-            <div className="title_roll mb-8">
-              <div className="our_logo_div flex justify-center">
+            <div className="title_roll mb-8 flex justify-center">
+              <div className="our_logo_div flex justify-center items-center w-[20vh] rounded-md bg-white">
                 <Image
                   src="/logofinal.PNG"
                   alt="Ditto GPT Logo"
-                  width={80}
-                  height={80}
-                  className="lo_go"
+                  width={100}
+                  height={100}
+                  className="lo_go px-6 py-2 w-full "
                 />
               </div>
             </div>
@@ -111,10 +111,13 @@ export default function ChatInterface() {
               What&apos;s on the agenda today?
             </h2>
 
-            <div className="askbar max-w-xl mx-auto" role="search">
-              <div className="relative">
+            <div
+              className="askbar max-w-xl mx-auto flex items-center justify-center"
+              role="search"
+            >
+              <div className="relative w-full">
                 <textarea
-                  className="askbar__input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-lg resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="askbar__input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-lg resize-none bg-whscrollbarite dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent scrollbar-hidden"
                   placeholder="Ask anything"
                   rows={1}
                   aria-label="Ask anything"
@@ -233,7 +236,7 @@ export default function ChatInterface() {
             <div className="relative">
               <textarea
                 ref={inputRef}
-                className="input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-lg resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="input w-full p-4 pr-20 border border-gray-300 dark:border-gray-600 rounded-lg resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent scrollbar-hidden"
                 placeholder="Ask anything"
                 rows={1}
                 aria-label="Message input"

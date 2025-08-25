@@ -73,14 +73,14 @@ export default function Sidebar({
               </button>
 
               {sidebarState === "expanded" && (
-                <div className="brand__name flex items-center">
-                  <div className="our_logo_div">
+                <div className="brand__name flex items-center m-0">
+                  <div className="our_logo_div bg-white rounded-md">
                     <Image
                       src="/logofinal.PNG"
                       alt="Ditto GPT Logo"
-                      width={32}
-                      height={32}
-                      className="lo_go"
+                      width={61}
+                      height={61}
+                      className="lo_go p-2"
                     />
                   </div>
                 </div>
@@ -89,8 +89,8 @@ export default function Sidebar({
           </div>
 
           {/* Navigation */}
-          <nav className="sidebar__nav flex-1 p-4 space-y-2">
-            <button className="navitem w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+          <nav className="sidebar__nav flex-1  space-y-2 ">
+            <button className="navitem w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ">
               <svg
                 className="w-5 h-5"
                 viewBox="0 0 24 24"
