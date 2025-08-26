@@ -9,3 +9,22 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+/* Add this in globals.css (or tailwind.css if you extend it) */
+::-webkit-scrollbar {
+  width: 8px; /* width of vertical scrollbar */
+  height: 8px; /* height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.7); /* slate-500-ish */
+  border-radius: 9999px; /* fully rounded */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(71, 85, 105, 0.9); /* darker on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* keep background clean */
+}

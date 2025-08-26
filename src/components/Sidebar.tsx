@@ -44,7 +44,7 @@ export default function Sidebar({
 
       {/* Sidebar */}
       <aside
-        className={`sidebar fixed lg:static inset-0 z-40 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out ${
+        className={`sidebar fixed  lg:static inset-0 z-40 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out ${
           sidebarState === "collapsed" ? "w-16" : "w-64"
         } ${
           isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
@@ -73,17 +73,7 @@ export default function Sidebar({
               </button>
 
               {sidebarState === "expanded" && (
-                <div className="brand__name flex items-center m-0">
-                  <div className="our_logo_div bg-white rounded-md">
-                    <Image
-                      src="/logofinal.PNG"
-                      alt="Ditto GPT Logo"
-                      width={61}
-                      height={61}
-                      className="lo_go p-2"
-                    />
-                  </div>
-                </div>
+                <div className="brand__name flex items-center m-0"></div>
               )}
             </div>
           </div>
